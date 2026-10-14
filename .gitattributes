@@ -1,0 +1,15 @@
+# Normalise line endings to LF in the repository, regardless of checkout platform.
+* text=auto
+
+# Keep real Windows batch/PowerShell files on CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never attempt text conversion on binary artifacts.
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.pt binary
+*.onnx binary
